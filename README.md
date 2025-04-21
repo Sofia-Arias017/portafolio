@@ -2,7 +2,7 @@
 
 ¡Bienvenidos a mi portafolio! 👋🏼 Soy **Sofía Arias**, una **desarrolladora web en formación** apasionada por crear experiencias digitales únicas. Aquí podrás ver algunos de mis proyectos más recientes, mis habilidades y aprender más sobre mí.
 
-🌐 **Ver Portafolio en Vivo**: [Portafolio Sofía Arias](https://sofia-arias017.github.io/)
+🌐 **Ver Portafolio en Vivo**: [Portafolio Sofía Arias](https://sofia-arias017.github.io/portafolio/)
 
 ## 💡 Acerca de mí
 
