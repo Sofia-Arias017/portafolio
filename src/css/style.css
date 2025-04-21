@@ -282,6 +282,15 @@ body.light-mode .skill {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* ✅ Corrección para texto en modo claro */
+body.light-mode .presentacion h2 {
+    color: #222222;
+}
+
+body.light-mode .presentacion p {
+    color: #444444;
+}
+
 body.light-mode .descripcion h2,
 body.light-mode #habilidades h2,
 body.light-mode #contacto h2 {
@@ -304,4 +313,102 @@ body.light-mode .footer {
 
 body.light-mode a {
     color: #0077ff;
+}
+
+/* ✅ Agregado para evitar colores chillones en contacto modo claro */
+body.light-mode #contacto a {
+    color: #005bbb
+}
+
+body.light-mode #contacto a:hover {
+    color: #004499;
+}
+
+/* === PROYECTOS === */
+#proyectos {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#proyectos h2 {
+    color: #00ffff;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.proyecto {
+    background-color: #181818;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 700px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+    transition: background-color 0.4s ease, transform 0.3s ease;
+}
+
+.proyecto:hover {
+    transform: scale(1.02);
+}
+
+.proyecto h3 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.proyecto p {
+    color: #cccccc;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.proyecto a {
+    display: inline-block;
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border: 1px solid #00ffff;
+    border-radius: 8px;
+    color: #00ffff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.proyecto a:hover {
+    background-color: #00ffff;
+    color: #0d0d0d;
+}
+
+/* === MODO CLARO para PROYECTOS === */
+body.light-mode #proyectos h2 {
+    color: #0077ff;
+}
+
+body.light-mode .proyecto {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .proyecto h3 {
+    color: #222222;
+}
+
+body.light-mode .proyecto p {
+    color: #444444;
+}
+
+body.light-mode .proyecto a {
+    border: 1px solid #0077ff;
+    color: #0077ff;
+}
+
+body.light-mode .proyecto a:hover {
+    background-color: #0077ff;
+    color: #ffffff;
+}
+
+.github{
+    width: 50px;
+    height: 50px;
+    margin-left: 0.5rem;
+    vertical-align: middle;
 }
