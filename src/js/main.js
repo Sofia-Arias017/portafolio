@@ -9,5 +9,5 @@ botonModo.addEventListener("click", () => {
 // Cambiar el ícono dependiendo del modo
     icono.src = esClaro
     ? "./src/storage/img/sol.png"   
-    : "./src/storage/img/luna.png"; 
+    : "./src/storage/img/Luna.png"; 
 });
