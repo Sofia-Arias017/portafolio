@@ -412,3 +412,132 @@ body.light-mode .proyecto a:hover {
     margin-left: 0.5rem;
     vertical-align: middle;
 }
+
+/* =====================================================
+   MEJORAS SKILLS – GRID + ANIMACIONES + PORCENTAJES
+   ===================================================== */
+
+/* 3 arriba / 3 abajo */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+/* Tarjeta de habilidad */
+.skill {
+    position: relative;
+    padding: 1.5rem 1rem;
+    transition:
+        transform 0.8s ease,
+        box-shadow 0.8s ease,
+        background-color 0.8s ease;
+    transform-style: preserve-3d;
+}
+
+/* Hover: giro + zoom */
+.skill:hover {
+    transform: rotateY(360deg) scale(1.15);
+    background-color: #00ffff;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.8);
+}
+
+/* Imagen */
+.skill img {
+    transition: transform 0.6s ease, filter 0.6s ease;
+}
+
+.skill:hover img {
+    transform: scale(1.15);
+    filter: brightness(1.2);
+}
+
+/* Texto */
+.skill span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    transition: color 0.4s ease;
+}
+
+.skill:hover span {
+    color: #0d0d0d;
+}
+
+/* === BARRA DE PROGRESO === */
+.progress {
+    width: 100%;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 0.5rem;
+}
+
+/* Barra interna */
+.progress-bar {
+    height: 100%;
+    width: 0;
+    background: linear-gradient(90deg, #0d0d0d, #333);
+    color: #ffffff;
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 10px;
+
+    /* 🔑 CLAVE */
+    opacity: 0;
+    transition: width 1.2s ease, opacity 0.4s ease;
+}
+
+/* Mostrar SOLO en hover */
+.skill:hover .progress-bar {
+    opacity: 1;
+}
+
+/* Valores */
+.skill[data-percent="95"] .progress-bar { width: 95%; }
+.skill[data-percent="85"] .progress-bar { width: 85%; }
+.skill[data-percent="80"] .progress-bar { width: 80%; }
+.skill[data-percent="75"] .progress-bar { width: 75%; }
+
+/* =======================
+   MODO CLARO (CORREGIDO)
+   ======================= */
+
+body.light-mode .skill:hover {
+    background-color: #0077ff;
+    box-shadow: 0 0 25px rgba(0, 119, 255, 0.6);
+}
+
+body.light-mode .skill:hover span {
+    color: #ffffff;
+}
+
+/* Fondo barra modo claro */
+body.light-mode .progress {
+    background-color: #dddddd;
+}
+
+/* Barra + texto modo claro */
+body.light-mode .progress-bar {
+    background: linear-gradient(90deg, #0077ff, #005bbb);
+    color: #ffffff;
+}
+
+/* =======================
+   RESPONSIVE
+   ======================= */
+@media (max-width: 768px) {
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+}
