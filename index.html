@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio - Sofía Arias</title>
-    <link rel="stylesheet" href="./src/css/style.css"/>
+    <link rel="stylesheet" href="./src/css/style.css">
 </head>
+
 <body class="dark-mode">
+
+    <!-- ===== HEADER ===== -->
     <header class="header">
         <nav class="navbar">
             <h1 class="logo">Sofía Arias</h1>
+
             <ul class="nav-links">
                 <li><a href="#sobre-mi">Sobre mí</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
@@ -17,77 +21,182 @@
                 <li><a href="#contacto">Contacto</a></li>
                 <li>
                     <button id="modo-btn" class="modo-btn">
-                        <img id="modo-icono" src="./src/storage/img/sol.png"/>
+                        <img id="modo-icono" src="./src/storage/img/sol.png" alt="Modo">
                     </button>
                 </li>
             </ul>
         </nav>
     </header>
 
+    <!-- ===== MAIN ===== -->
     <main>
+
+        <!-- ===== SOBRE MI ===== -->
         <section id="sobre-mi">
+
             <div class="presentacion">
                 <div class="foto-container">
-                    <img src="./src/storage/img/foto-perfil.png" alt="Foto Sofía" class="foto-perfil"/>
+                    <img 
+                        src="./src/storage/img/foto-perfil.png" 
+                        alt="Foto de Sofía Arias" 
+                        class="foto-perfil"
+                    >
                 </div>
+
                 <h2>¡Hola! Soy Sofía 👋🏻</h2>
                 <p>
-                    Desarrolladora web en formación con muchas ganas de aprender, crecer y crear. Me apasiona transformar ideas en experiencias digitales que sean atractivas, funcionales y accesibles. Disfruto cada paso del proceso y me motiva seguir aprendiendo para aportar soluciones reales que conecten con las personas.
+                    Desarrolladora web en formación con muchas ganas de aprender,
+                    crecer y crear. Me apasiona transformar ideas en experiencias
+                    digitales atractivas, funcionales y accesibles.
                 </p>
             </div>
 
             <div class="descripcion">
                 <h2>Sobre mí</h2>
                 <p>
-                    Soy estudiante y entusiasta del desarrollo web, enfocada en construir sitios limpios, responsivos y bien estructurados. Actualmente me encuentro aprendiendo y perfeccionando tecnologías como HTML, CSS y JavaScript, fortaleciendo mis habilidades tanto técnicas como creativas. Me encanta trabajar en equipo, descubrir nuevas herramientas y enfrentar desafíos que me ayuden a seguir creciendo. Este portafolio es una muestra de mi proceso, mi progreso y mi visión como futura profesional en el mundo digital.
+                    Soy estudiante y entusiasta del desarrollo web, enfocada en la
+                    construcción de aplicaciones modernas, responsivas y bien
+                    estructuradas. Actualmente fortalezco mis conocimientos en
+                    frontend y backend, con una visión clara hacia el desarrollo
+                    Full Stack.
                 </p>
             </div>
+
         </section>
 
+        <!-- ===== HABILIDADES ===== -->
         <section id="habilidades">
             <h2>HABILIDADES</h2>
+
             <div class="skills-container">
-                <div class="skill">
-                    <img src="./src/storage/img/Html.png" alt="HTML" />
-                    <p>HTML</p>
+
+                <div class="skill" data-percent="95">
+                    <img src="./src/storage/img/Html.png" alt="HTML">
+                    <span>HTML</span>
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
                 </div>
-                <div class="skill">
-                    <img src="./src/storage/img/CSS.png" alt="CSS" />
-                    <p>CSS</p>
+
+                <div class="skill" data-percent="95">
+                    <img src="./src/storage/img/CSS.png" alt="CSS">
+                    <span>CSS</span>
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
                 </div>
-                <div class="skill">
-                    <img src="./src/storage/img/js.png" alt="JavaScript" />
-                    <p>JavaScript</p>
+
+                <div class="skill" data-percent="85">
+                    <img src="./src/storage/img/js.png" alt="JavaScript">
+                    <span>JavaScript</span>
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
                 </div>
+
+                <!-- GIT SIN PORCENTAJE -->
+                <a 
+                    href="https://github.com/Sofia-Arias017" 
+                    target="_blank" 
+                    class="skill git-skill"
+                >
+                    <img src="./src/storage/img/Git.png" alt="GitHub">
+                    <span>GitHub</span>
+                </a>
+
+                <div class="skill" data-percent="80">
+                    <img src="./src/storage/img/mySQL.png" alt="MySQL">
+                    <span>MySQL</span>
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+                </div>
+
+                <div class="skill" data-percent="75">
+                    <img src="./src/storage/img/Java.png" alt="Java">
+                    <span>Java</span>
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+                </div>
+
+                <div class="skill" data-percent="75">
+                    <img src="./src/storage/img/SpringBoot.png" alt="Spring Boot">
+                    <span>Spring Boot</span>
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
+        <!-- ===== PROYECTOS ===== -->
         <section id="proyectos">
-            <h2>PROYECTOS <img class="github" src="./src/storage/img/github.png" alt="github"></h2>
+            <h2>
+                PROYECTOS 
+                <img 
+                    src="./src/storage/img/github.png" 
+                    alt="GitHub" 
+                    class="github"
+                >
+            </h2>
+
             <div class="proyecto">
                 <h3>DOM API Naruto</h3>
-                <p>Explorador interactivo de personajes del universo Naruto usando manipulación del DOM y consumo de API.</p>
-                <a href="https://sofia-arias017.github.io/DOM-API-NARUTO/" target="_blank">Ver Proyecto</a>
-                <a href="https://github.com/Sofia-Arias017/DOM-API-NARUTO" target="_blank">Ver Código</a>
+                <p>
+                    Explorador interactivo de personajes del universo Naruto,
+                    usando manipulación del DOM y consumo de API.
+                </p>
+                <a 
+                    href="https://sofia-arias017.github.io/DOM-API-NARUTO/" 
+                    target="_blank"
+                >
+                    Ver Proyecto
+                </a>
+                <a 
+                    href="https://github.com/Sofia-Arias017/DOM-API-NARUTO" 
+                    target="_blank"
+                >
+                    Ver Código
+                </a>
             </div>
+
             <br><br>
+
             <div class="proyecto">
-                <h3>App de Ecommerce de Ropa</h3>
-                <p>Plataforma interactiva de ecommerce de ropa, donde los usuarios pueden visualizar productos, agregarlos al carrito y realizar compras online.</p>
-                <a href="https://sofia-arias017.github.io/app-de-ecommerce-de-ropa/src/views/home.html" target="_blank">Ver Proyecto</a>
-                <a href="https://github.com/Sofia-Arias017/app-de-ecommerce-de-ropa" target="_blank">Ver Código</a>
+                <h3>App Ecommerce de Ropa</h3>
+                <p>
+                    Plataforma ecommerce donde los usuarios pueden visualizar
+                    productos, agregarlos al carrito y simular compras.
+                </p>
+                <a 
+                    href="https://sofia-arias017.github.io/app-de-ecommerce-de-ropa/src/views/home.html" 
+                    target="_blank"
+                >
+                    Ver Proyecto
+                </a>
+                <a 
+                    href="https://github.com/Sofia-Arias017/app-de-ecommerce-de-ropa" 
+                    target="_blank"
+                >
+                    Ver Código
+                </a>
             </div>
         </section>
 
+        <!-- ===== CONTACTO ===== -->
         <section id="contacto">
             <h2>Contacto</h2>
-            <p>📱 Teléfono: <a href="tel:+573173497587">+57 3173497587</a></p>
+            <p>📱 Teléfono: <a href="tel:+573173497587">+57 317 349 7587</a></p>
             <p>🐙 GitHub: <a href="https://github.com/Sofia-Arias017" target="_blank">Sofia-Arias017</a></p>
         </section>
+
     </main>
 
+    <!-- ===== FOOTER ===== -->
     <footer class="footer">
-        <p>© 2025 Sofía - Todos los derechos reservados</p>
+        <p>© 2025 Sofía Arias - Todos los derechos reservados</p>
     </footer>
 
     <script src="./src/js/main.js"></script>
